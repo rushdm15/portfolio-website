@@ -116,7 +116,6 @@ button:hover, button:focus {
 .about__me {
   max-width: 700px;
   margin: auto;
-  text-align: center;
 }
 
 .about__me--header {
@@ -130,12 +129,6 @@ button:hover, button:focus {
   margin: auto;
   text-align: center;
   list-style: none;
-}
-
-.center-text {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
 }
 
 .profile {
@@ -261,6 +254,9 @@ button:focus,
   opacity: .8;
 }
 
+.center-text {
+  text-align: center;
+}
 @keyframes color-change {
     0% {
       fill: #edc655;
