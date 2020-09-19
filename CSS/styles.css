@@ -267,7 +267,7 @@ button, .button {
    border-radius: 3px;
    /* width of the border, type, color */
    border-bottom: 2px solid rgba(0, 0, 0, .3);
-   transition-duration: .2s opacity;
+   transition: .2s opacity;
 }
 
 button:hover,
@@ -281,14 +281,14 @@ button:focus,
 }
 
 @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
   }
 }
 
