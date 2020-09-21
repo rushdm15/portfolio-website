@@ -152,8 +152,9 @@ button:hover, button:focus {
 }
 
 .center-text {
-  max-width: 900px;
-  margin: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
