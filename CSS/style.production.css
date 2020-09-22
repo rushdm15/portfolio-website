@@ -120,23 +120,14 @@ button:hover, button:focus {
   clear: both;
 }
 
-.about__me {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
-.about__me--header {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
 .about__me--item {
+  list-style: none;
+}
+
+.about__me--table {
   max-width: 700px;
   margin: auto;
   text-align: center;
-  list-style: none;
 }
 
 .contact__me {
@@ -152,9 +143,6 @@ button:hover, button:focus {
 }
 
 .contact__me--item {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
   list-style: none;
 }
 
