@@ -253,34 +253,6 @@ button:hover, button:focus {
   }
 }
 
-button, .button {
-  /* your styling goes here */
-   /* overwrites browser defaults and resets the border */
-   border: none;
-   display: inline-block;
-   /* takes the font from the outer container */
-   font-family: inherit;
-   /* styles the button */
-   background-color: #357b70;
-   color: white;
-   text-decoration: none;
-   padding: 10px;
-   border-radius: 3px;
-   /* width of the border, type, color */
-   border-bottom: 2px solid rgba(0, 0, 0, .3);
-   transition: .2s opacity;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-/* your styling goes here */
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  opacity: .8;
-}
-
 @keyframes color-change {
   0% {
     fill: #edc655;
