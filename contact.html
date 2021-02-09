@@ -36,21 +36,38 @@
       <h1>Contact Me</h1>
       <h3>Louisville, KY</h3>
       <h3>USA</h3>
-      <form action="#" method="post">
-          <label class="standard-label" for="contact-email">E-mail:</label>
-          <br />
-          <input type="email" id="contact-email" required="required" placeholder="*Required">
-          <br />
-          <label class="standard-label" for="contact-tel">Telephone:</label>
-          <br />
-          <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####">
-          <br />
-          <label class="standard-label" for="contact-message">Message:</label>
-          <br />
-          <textarea id="contact-message" maxlength="240" required="required" placeholder="*Required"></textarea>
-          <br />
-          <button type="submit" class="send">Send Message</button>
-      </form>
+      <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        <div class="fcf-credit" id="fcf-credit">
+        Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+        </div>
+
+    </form>
   </main>
 
 <footer class="page-footer">
