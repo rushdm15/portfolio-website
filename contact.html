@@ -32,31 +32,24 @@
         </nav>
     </header>
 
-    <div class="center-text">
+    <main class="content">
       <h1>Contact Me</h1>
-
-    <!-- <ul class="contact__me--item"> -->
-      <h2>Louisville, KY</h2>
-      <h2>USA</h2>
-
-    <!-- </ul> -->
-
-      <!-- <a href="tel:+45678888">(+373) 34 678 2433</a><br>
-      <a href="mailto:rushdm15@gmail.com">howzit?@gmail.com</a><br> -->
-      <a href="mailto:rushdm15@gmail.com">Contact Me Below</a>
-
-      <form action="#" method="post" id="contact-form">
-        <label class="standard-label">E-mail: </label>
-        <input type="email" required>
-
-        <label class="standard-label">Telephone: </label>
-        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-        <label class="standard-label">Message: </label>
-        <textarea required maxlength="240"></textarea>
-        <input type="submit" value="send message">
+      <form action="#" method="post">
+          <label class="standard-label" for="contact-email">E-mail:</label>
+          <br />
+          <input type="email" id="contact-email" required="required" placeholder="*Required">
+          <br />
+          <label class="standard-label" for="contact-tel">Telephone:</label>
+          <br />
+          <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####">
+          <br />
+          <label class="standard-label" for="contact-message">Message:</label>
+          <br />
+          <textarea id="contact-message" maxlength="240" required="required" placeholder="*Required"></textarea>
+          <br />
+          <button type="submit" class="send">Send Message</button>
       </form>
-    </div>
+  </main>
 
 <footer class="page-footer">
   <div class="social-media">  <p> Find me on </p>
