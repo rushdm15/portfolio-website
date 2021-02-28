@@ -230,6 +230,7 @@ button:hover, button:focus {
    min-height: auto;
    margin: 0;
    padding: 15px;
+   text-align: center;
  }
  .grid__item:last-child {
    -ms-grid-column: 3;
