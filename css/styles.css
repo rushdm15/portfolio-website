@@ -217,8 +217,8 @@ button:hover, button:focus {
  }
  .grid__item {
    background-color: lightgray;
-   width: auto;
-   min-height: auto;
+   /* width: auto;
+   min-height: auto; */
    margin: 0;
    padding: 15px;
  }
