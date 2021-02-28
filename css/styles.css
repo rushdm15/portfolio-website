@@ -296,6 +296,6 @@ button:hover, button:focus {
 }
 
 .profile__cites {
-  max-width:100%;
-  height:auto;
+  height: 500px;
+  width: 500px;
 }
