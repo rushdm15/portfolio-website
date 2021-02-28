@@ -211,8 +211,8 @@ button:hover, button:focus {
  /* start grid fallback */
  .grid__item {
    background-color: lightgray;
-   /* width: auto;
-   min-height: auto; */
+   width: auto;
+   min-height: auto;
    margin: 0;
    padding: 15px;
  }
