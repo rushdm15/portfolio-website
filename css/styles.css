@@ -294,3 +294,10 @@ button:hover, button:focus {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.profile__cites {
+  float: center;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
