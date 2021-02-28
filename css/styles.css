@@ -199,13 +199,6 @@ button:hover, button:focus {
   margin-left: 15px;
 }
 
-/* start grid fallback */
-.grid__item {
- display: inline-block;
- width: 33%;
-}
-/* end grid fallback */
-
 @supports (display: grid) {
  .grid {
    display: grid;
@@ -215,10 +208,11 @@ button:hover, button:focus {
    margin: 0;
 
  }
+ /* start grid fallback */
  .grid__item {
    background-color: lightgray;
-   /* width: auto;
-   min-height: auto; */
+   width: 500px;
+   height: 500px;
    margin: 0;
    padding: 15px;
  }
