@@ -36,75 +36,38 @@
       <h1>Contact Me</h1>
       <h3>Louisville, KY</h3>
       <h3>USA</h3>
-    </main>  
-
-    <?php
-    $statusMsg = '';
-    $msgClass = '';
-    if(isset($_POST['submit'])){
-        // Get the submitted form data
-        $email = $_POST['email'];
-        $name = $_POST['name'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
+      <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
-        // Check whether submitted data is not empty
-        if(!empty($email) && !empty($name) && !empty($subject) && !empty($message)){
-            
-            if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-                $statusMsg = 'Please enter your valid email.';
-                $msgClass = 'errordiv';
-            }else{
-                // Recipient email
-                $toEmail = 'rushdm15@gmail.com';
-                $emailSubject = 'Contact Request Submitted by '.$name;
-                $htmlContent = '<h2>Contact Request Submitted</h2>
-                    <h4>Name</h4><p>'.$name.'</p>
-                    <h4>Email</h4><p>'.$email.'</p>
-                    <h4>Subject</h4><p>'.$subject.'</p>
-                    <h4>Message</h4><p>'.$message.'</p>';
-                
-                // Set content-type header for sending HTML email
-                $headers = "MIME-Version: 1.0" . "\r\n";
-                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-                
-                // Additional headers
-                $headers .= 'From: '.$name.'<'.$email.'>'. "\r\n";
-                
-                // Send email
-                if(mail($toEmail,$emailSubject,$htmlContent,$headers)){
-                    $statusMsg = 'Your contact request has been submitted successfully !';
-                    $msgClass = 'succdiv';
-                }else{
-                    $statusMsg = 'Your contact request submission failed, please try again.';
-                    $msgClass = 'errordiv';
-                }
-            }
-        }else{
-            $statusMsg = 'Please fill all the fields.';
-            $msgClass = 'errordiv';
-        }
-    }
-    ?>
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
 
-    <h2>Simple PHP Contact Form</h2>
-    <div class="contactFrm">
-        <?php if(!empty($statusMsg)){ ?>
-            <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
-        <?php } ?>
-        <form action="" method="post">
-            <h4>Name</h4>
-            <input type="text" name="name" placeholder="Your Name" required="">
-            <h4>Email </h4>
-            <input type="email" name="email" placeholder="email@example.com" required="">
-            <h4>Subject</h4>
-            <input type="text" name="subject" placeholder="Write subject" required="">
-            <h4>Message</h4>
-            <textarea name="message" placeholder="Write your message here" required=""> </textarea>
-            <input type="submit" name="submit" value="Submit">
-            <div class="clear"> </div>
-        </form>
-    </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        <div class="fcf-credit" id="fcf-credit">
+        </div>
+
+    </form>
+  </main>
 
 <footer class="page-footer">
   <div class="social-media">  <p> Find me on </p>
